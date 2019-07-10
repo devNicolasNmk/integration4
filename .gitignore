@@ -1,0 +1,10 @@
+/js
+/less
+/metadata
+/scss
+/sprites
+/svgs
+/webfonts
+.css
+!style.css
+!normalize.css

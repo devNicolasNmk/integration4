@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+
+ul, li{
+    list-style: none;
+    display:inline-block;
+}
+
+ul, li a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Questrial',Arial, Helvetica, sans-serif;
+}
+
+
+
+/* wrap1 */
+#wrap1{
+    background-color: #2056ac;
+    color:#fff;
+    height: 400px;
+}
+h1{
+    font-size: 56px;
+    font-weight: bold;
+    margin:0;
+}
+
+.travail{
+    width: 1200px;
+    margin:0 auto;
+
+}
+
+.h1-cog{
+    text-align: center
+}
+.fa-cog{
+    font-size:56px;
+}
+
+
+
+#wrap1 .travail nav ul li a:visited{
+    color:#fff;
+}
+
+
+
+/* wrap2 */
+
+figure{
+    width: 1200px;
+}
+hr{
+    width: 1200px;
+    color:rgba(0,0,0,.2);
+}
+
