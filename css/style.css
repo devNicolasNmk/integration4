@@ -22,11 +22,13 @@ body{
 
 /* wrap1 */
 #wrap1{
+    display: flex;
     background-color: #2056ac;
     color:#fff;
     height: 400px;
 }
 h1{
+    display: block;
     font-size: 56px;
     font-weight: bold;
     margin:0;
@@ -37,20 +39,42 @@ h1{
     margin:0 auto;
 
 }
+#travail-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
 
 .h1-cog{
-    text-align: center
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 250px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
 }
 .fa-cog{
     font-size:56px;
 }
 
+#wrap1 .travail nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;    
+}
+
+#wrap1 .travail nav ul{
+ width: 75%;
+ padding-left: 0px;
+ text-align: center;
+}
 
 
 #wrap1 .travail nav ul li a:visited{
     color:#fff;
 }
-
 
 
 /* wrap2 */
