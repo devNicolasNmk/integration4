@@ -31,73 +31,128 @@ a {
     color: rgba(0, 0, 0, 0.6)
 }
 
-figure{
-    margin:0;
+figure {
+    margin: 0;
 }
 
 img {
-    max-width: 100%
+    max-width: 100%;
+    /* max-height: 150px; */
 }
 
-/* wrapper */
-.wrapper{
-    width: 480px;
+h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/*------------- wrapper ------------- */
+.wrapper {
+    min-width: 48rem;
+    max-width: 100%;
     background-color: #000000;
 }
 
-/* main-header */
-.main-header{
-    
+/* ------------- main-header ------------- */
+.main-header {
+
+    max-width: 100%;
+    min-width: 48rem;
 }
 
-.menu a{
+.menu a {
     color: #ffffff;
 }
 
-h1{
-    color:#ffffff;
-}
-/* fin  main-header */
-
-.banner h3, figcaption a{
+h1 {
     color: #ffffff;
+    font-size: 1.9rem;
 }
 
-/* main */
-main{
+/* ------------- fin  main-header -------------*/
+
+/*------------- bannieres ------------- */
+
+.banner {
+    max-width: 100%;
+    min-width: 48rem;
+}
+
+.banner article figure {
+    max-width: 48rem;
+    min-width: 48rem;
+}
+
+article figure figcaption {
+    margin-top: 1.8rem;
+    padding-left: 0.8rem
+}
+
+article figure figcaption a {
+    padding-left: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.banner h3,
+figcaption a {
+    color: #ffffff;
+
+}
+
+figure+h3 {
+    padding-left: 0.8rem
+}
+
+/* ------------- fin  bannieres -------------*/
+
+/*------------- main -------------  */
+main,
+.main {
     background-color: #ffffff;
     padding-top: 2.5rem;
-   
+    min-width: 48rem;
+    max-width: 100%;
+
 }
 
-section{
-    border-bottom: 1px solid rgba(0,0,0,.1);
+section {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 4.5rem;
+    margin-bottom: 2rem;
 }
 
-h2{
-    font-size: 3.5rem;
+h2 {
+    font-size: 3.1rem;
     padding-bottom: 2.5rem;
-    
+    font-weight: normal;
+
 }
-iframe{
+
+iframe {
     border: none;
     width: 100%;
 }
 
-.main p{
+.main p {
     width: 100%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    
+    line-height: 23px;
+
 }
 
-.main p:last-of-type{
-    margin-bottom: 7rem;
+.main p:first-child {
+    margin-top: 28px;
 }
 
-.main p a{
-color:#24890d;
-text-decoration : underline;
+.main p:last-of-type {
+    margin-bottom: 1rem;
+}
+
+.main p a {
+    color: #24890d;
+    text-decoration: underline;
 }
 
 .main p a:hover {
@@ -105,31 +160,131 @@ text-decoration : underline;
     text-decoration: none;
 }
 
-aside{
+.border {
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+
+}
+
+.border a,
+.border p {
+    font-size: 1.4rem
+}
+
+aside {
     padding-left: 12px;
     padding-right: 12px;
+    padding-top: 8px;
+
 }
 
-.first-aside{
+aside div a {
+    color: green;
+}
+
+aside div p {
+    margin: 0;
+
+}
+
+.first-aside {
     border-top: 5px solid black;
-    padding-top: 20px;
+    padding-top: 8px;
 }
 
-/* fin main */
+#feature {
+    padding-bottom: 80px;
+}
+
+#feat-text {
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+}
+
+/* ------------- fin main -------------*/
 
 
+/*------------- laterale -------------*/
+.sub-nav{
+    padding-top: 5rem;
+}
 
+.sub-nav h2 {
+    display: none;
+}
 
-/* laterale */
 h3 {
     color: #ffffff;
 }
-.laterale div p{
-    color:#ffffff
+
+.laterale,
+.lateral p {
+    color: #ffffff
 }
-/* fin lateral  */
+
+.sub-nav ul {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-nav ul li:first-of-type {
+    border-top: 1px solid rgba(255, 255, 255, .2);
+}
+
+.sub-nav ul li {
+    height: 3.7rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    display: flex;
+    align-items: center;
+}
+
+.try{
+    background-color: green;
+}
 
 
-footer p a{
+.sub-nav ul li a {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.sub-nav ul li a:hover {
+    color: green;
+}
+.sub-nav ul .try a:hover {
+    color: white
+}
+
+
+form{
+    margin-top: 5.2rem;
+    margin-bottom: 3.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    
+}
+input{
+    width: 100%;
+    height: 2.5rem;
+    background-color: #191919;
+    border-radius:3px;
+    border:1px solid rgba(255,255,255,.2);
+}
+
+input[placeholder]{
+    color:rgba(255,255,255,0.9);
+    padding-left: 0.5rem;
+    font-size: 1.4rem;
+}
+
+/*------------- fin lateral ------------- */
+
+
+/* ------------- footer-------------*/
+footer p a {
     color: #ffffff;
 }
+
+/* ------------- fin footer ------------- */

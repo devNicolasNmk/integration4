@@ -14,6 +14,7 @@
 
 <body>
 
+    <!-- wrapper -->
     <div class='wrapper'>
         <!-- menu header nav principal -->
         <header class="main-header">
@@ -21,9 +22,7 @@
                 <h1>Progeny MMXIV</h1>
                 <nav>
                     <!-- <input type="checkbox" class="menu-checkbox" id="menu-checkbox">
-                    <label for="menu-checkbox" class="iconeMenu"> -->
-                        <div></div>
-                    </label>
+                    <label for="menu-checkbox" class="iconeMenu"><div></div></label> -->
                     <div class="menu">
                         <a href="">Home</a>
                         <a href="">ABOUT</a>
@@ -42,38 +41,41 @@
 
         <!-- bannieres -->
         <div class="banner">
+
             <article>
                 <figure>
                     <img src="assets/images/nowell-featured-image-1038x576.jpg" alt="">
-                    <figcaption><a href="#">Blog</a></figcaption>
+                    <figcaption><a href="#">BLOG</a></figcaption>
                 </figure>
                 <h3>Nowell WordPress AudioTheme Features Overview</h3>
             </article>
+
             <article>
                 <figure>
-                    <img src="assets/images/rodney-hayden-atascosa-sand.jpg" alt="">
-                    <figcaption><a href="#">Records</a></figcaption>
+                    <img id="resize-img" src="assets/images/rodney-hayden-atascosa-sand.jpg" alt="">
+                    <figcaption><a href="#">RECORDS</a></figcaption>
                 </figure>
                 <h3>Atascosa Sand</h3>
             </article>
+
             <article>
                 <figure>
                     <img src="assets/images/322267385_640.jpg" alt="">
-                    <figcaption><a href="#">Videos</a></figcaption>
+                    <figcaption><a href="#">VIDEOS</a></figcaption>
                 </figure>
                 <h3>Drew Kennedy – Angel Band</h3>
             </article>
+
         </div>
         <!-- fin bannieres -->
 
-
         <!-- Section principale -->
-        <main>
+        <main class="main">
             <section class="main">
-                
+
                 <header>
-                    <h2>AUDIOTHEME FRAMEWORD DEMO</h2>
-                    <iframe width="474" height="267" src="https://www.youtube.com/embed/uIi44Hgjpl8" 
+                    <h2>AUDIOTHEME FRAMEWORK DEMO</h2>
+                    <iframe width="474" height="267" src="https://www.youtube.com/embed/uIi44Hgjpl8"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </header>
@@ -89,56 +91,57 @@
                     child theme we’ve created. Take a look around at the functionality
                     for displaying gigs and venues, discography (liner notes for the web), and videos.
                 </p>
-            
-            </section>
 
-            <aside>
-                <h4 class="first-aside">UPCOMING GIGS</h4>
-                <div>
-                    <a href="#">Miller Auditorium</a>
-                    <p>Kalamazoo, MI, United States</p>
-                    <p>October 10, 2019</p>
-                </div>
-                <div>
-                    <a href="#">Royal Albert Hall</a>
-                    <p>London, ENG, United Kingdom</p>
-                    <p>April 23, 2020</p>
-                </div>
-                <div>
-                    <a href="#">Spokane Arena</a>
-                    <p>Spokane, WA, United States</p>
-                    <p>May 19, 2020</p>
-                </div>
-            </aside>
-            <aside>
-                <h4 class="first-aside">Featured Video</h4>
-                <figure>
-                    <img src="assets/images/audiotheme-overview-video-thumbnail.jpg" alt="">
-                    <figcaption>Overview shocasing a few of the features available in the
-                        AudioTheme Framework via the WordPress admin.
-                    </figcaption>
-                </figure>
-            </aside>
- 
+            </section>
+            <div>
+                <aside>
+                    <h4 class="first-aside">UPCOMING GIGS</h4>
+                    <div class='border'>
+                        <a href="#">Miller Auditorium</a>
+                        <p><em>Kalamazoo, MI, United States</em></p>
+                        <p>October 10, 2019</p>
+                    </div>
+                    <div class="border">
+                        <a href="#">Royal Albert Hall</a>
+                        <p><em>London, ENG, United Kingdom</em></p>
+                        <p>April 23, 2020</p>
+                    </div>
+                    <div>
+                        <a href="#">Spokane Arena</a>
+                        <p><em>Spokane, WA, United States</em></p>
+                        <p>May 19, 2020</p>
+                    </div>
+                </aside>
+                <aside>
+                    <h4 class="first-aside">Featured Video</h4>
+                    <figure id="feature">
+                        <img src="assets/images/audiotheme-overview-video-thumbnail.jpg" alt="">
+                        <figcaption id="feat-text">Overview shocasing a few of the features available in the
+                            AudioTheme Framework via the WordPress admin.
+                        </figcaption>
+                    </figure>
+                </aside>
+            </div>
+
         </main>
         <!-- fin section principale -->
 
         <!-- Block lateral  -->
         <div class="laterale">
-            <nav>
+            <nav class="sub-nav">
                 <H2>Twenty Fourteen Child Theme</H2>
                 <ul>
                     <li><a href="#">CREDITS</a></li>
                     <li><a href="#">BLOG/NEWS</a></li>
                     <li><a href="#">STYLE GUIDE</a></li>
                     <li><a href="#">CONTACT</a></li>
-                    <li><a href="#">TRY AUDIOTHEME!</a></li>
+                    <li class="try"><a href="#">TRY AUDIOTHEME!</a></li>
                     <li><a href="#">GITHUB</a></li>
                     <li><a href="#">WORDPRESS</a></li>
                 </ul>
             </nav>
 
-            <form action="#">
+            <form action="#" method="get">
                 <input type="text" placeholder="Search ...">
             </form>
 
@@ -174,6 +177,7 @@
         <!-- fin footer -->
 
     </div>
+    <!-- fin wrapper -->
 
 </body>
 
