@@ -3,6 +3,7 @@
 :root {
     /* 1 rem = 10px */
     font-size: 62.5%;
+    /* font-size: 50%; */
 }
 
 body,
@@ -57,11 +58,57 @@ h3 {
 
     max-width: 100%;
     min-width: 48rem;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
+.loupe{
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    color: #ffffff;
+    text-align: center;
+    padding-top:12px;
+    
+}
+
+#nav-js{
+    width: 40px;
+    height: 40px;
+    color:#ffffff;
+    font-size: 1.8rem;
+    text-align: center;
+    position: relative;
+    right: 0;
+}
+#input-search{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+}
+.menu{
+    /* display: none; */
+    position: relative;
+    left:-380px;
+    width: 100%;
+    display: none;
+}
 .menu a {
     color: #ffffff;
 }
+.menu a:hover {
+    color: green;
+}
+.menu li{
+   height: 3.7rem;
+   border-bottom : 1px solid rgba(255, 255, 255, .2);
+}
+.menu li:first-child{
+ 
+    border-top : 1px solid rgba(255, 255, 255, .2);
+ }
 
 h1 {
     color: #ffffff;
@@ -170,11 +217,21 @@ iframe {
     font-size: 1.4rem
 }
 
-aside {
+aside,
+aside ul li {
     padding-left: 12px;
     padding-right: 12px;
     padding-top: 8px;
+}
 
+aside ul li a {
+
+    color: #ffffff;
+}
+
+aside ul li a:hover {
+
+    color: green
 }
 
 aside div a {
@@ -205,7 +262,7 @@ aside div p {
 
 
 /*------------- laterale -------------*/
-.sub-nav{
+.sub-nav {
     padding-top: 5rem;
 }
 
@@ -240,10 +297,17 @@ h3 {
     align-items: center;
 }
 
-.try{
+.try {
     background-color: green;
 }
 
+aside a {
+    color: #ffffff
+}
+
+aside a:hover {
+    color: green;
+}
 
 .sub-nav ul li a {
     color: #ffffff;
@@ -253,36 +317,83 @@ h3 {
 .sub-nav ul li a:hover {
     color: green;
 }
+
 .sub-nav ul .try a:hover {
     color: white
 }
 
 
-form{
+form {
     margin-top: 5.2rem;
     margin-bottom: 3.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    
+
 }
-input{
+
+input {
     width: 100%;
     height: 2.5rem;
     background-color: #191919;
-    border-radius:3px;
-    border:1px solid rgba(255,255,255,.2);
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, .2);
 }
 
-input[placeholder]{
-    color:rgba(255,255,255,0.9);
+input[placeholder] {
+    color: rgba(255, 255, 255, 0.9);
     padding-left: 0.5rem;
     font-size: 1.4rem;
 }
+
+aside figure{
+    margin-bottom:5rem;   
+}
+
+#thanks li {
+    height: 3.7rem;
+
+}
+
+#thanks li:nth-child(2) {
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-left: none;
+    border-right: none;
+
+}
+
+.laterale aside:last-child{
+    margin-bottom: 20rem;
+}
+
+#wordpress-name{
+    color : rgba(255, 255, 255, .7);
+
+    margin-top: 5rem;
+    padding-left:1.5rem;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid rgba(255,255,255,.3)
+}
+
+#wordpress-name a{
+    color : #ffffff;
+}
+
+#wordpress-name a:hover{
+    color : green;
+}
+
 
 /*------------- fin lateral ------------- */
 
 
 /* ------------- footer-------------*/
+
+footer{
+    padding-left:1.5rem;
+    width: 100%;
+    height: 10rem;
+}
+
 footer p a {
     color: #ffffff;
 }
