@@ -1,3 +1,5 @@
+//this is js file
+
 //recuperation des variable
     
     var search = document.getElementById("nav-search");
